@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<!-- Website Template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Services - Laboratory Website Template</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+    <style>
+        .section {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .horizontal-layout {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .horizontal-item {
+            flex: 1 1 45%;
+            box-sizing: border-box;
+            padding: 20px;
+            margin: 10px;
+            background-color: #fafafa;
+            border-radius: 8px;
+            min-width: 250px;
+            text-align: left;
+        }
+        .horizontal-item img {
+            width: 60%;
+            height: auto;
+            border-radius: 50%; 
+            margin-bottom: 20px;
+        }
+        .zigzag-layout {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .zigzag-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fafafa;
+            border-radius: 8px;
+        }
+        .zigzag-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .zigzag-item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        .zigzag-item:nth-child(even) img {
+            margin-right: 20px;
+            margin-left: 0;
+        }
+        .zigzag-content {
+            flex: 1;
+        }
+        
+        .team-layout {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+	<div id="header">
+		<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+		<ul>
+			<li>
+				<a href="index.html">home</a>
+			</li>
+			<li>
+				<a href="about.html">about</a>
+			</li>
+			<li class="selected">
+				<a href="services.html">services</a>
+			</li>
+			<li>
+				<a href="location.html">our locations</a>
+			</li>
+			<li>
+				<a href="contact.html">contact</a>
+			</li>
+			<li>
+				<a href="blog.html">blog</a>
+			</li>
+		</ul>
+	</div>
+
+    <div id="body">
+        <div class="container section">
+            <h1>An Accurate Interpretation of Your Genetics</h1>
+            <div class="horizontal-layout">
+                <div class="horizontal-item">
+                    <img src="ac1.png" alt="Reviewed by Doctors">
+                    <h3>Reviewed by Doctors</h3>
+                    <p>Our reports are reviewed by our partner doctors, who provide a full assessment based on your genetic and health profile.</p>
+                </div>
+                <div class="horizontal-item">
+                    <img src="ac2.png" alt="Simple and Actionable">
+                    <h3>Simple and Actionable</h3>
+                    <p>Our content-rich reports help you understand the basis for each test with clear steps towards a healthier you.</p>
+                </div>
+                <div class="horizontal-item">
+                    <img src="ac3.svg" alt="Comprehensive">
+                    <h3>Comprehensive</h3>
+                    <p>We take into consideration how your lifestyle influences your genes, as we know that DNA alone is not enough to draw a full picture of you.</p>
+                </div>
+                <div class="horizontal-item">
+                    <img src="ac4.svg" alt="Supportive">
+                    <h3>Supportive</h3>
+                    <p>We provide professional end-to-end support to make sure all your questions are answered after you received your results.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container section">
+            <h2>How It Works: 4 Simple Steps</h2>
+            <div class="zigzag-layout">
+                <div class="zigzag-item">
+                    <img src="step1.png" alt="Collect Your Saliva">
+                    <div class="zigzag-content">
+                        <h3>1. Collect Your Saliva</h3>
+                        <p>We will send the kit to your doorstep. Once received, register it online and collect your sample using the equipment provided.</p>
+                    </div>
+                </div>
+                <div class="zigzag-item">
+                    <img src="step2.png" alt="Post Package">
+                    <div class="zigzag-content">
+                        <h3>2. Post Package</h3>
+                        <p>You can send your sample back to us by using the same box it came in. International orders will require courier collection.</p>
+                    </div>
+                </div>
+                <div class="zigzag-item">
+                    <img src="step3.png" alt="View Reports Online">
+                    <div class="zigzag-content">
+                        <h3>3. View Reports Online</h3>
+                        <p>We will analyze your sample, generate your genetic reports and have them reviewed by one of our partner doctors. Once ready, you will view them from your account.</p>
+                    </div>
+                </div>
+                <div class="zigzag-item">
+                    <img src="step4.png" alt="Get a Consultation">
+                    <div class="zigzag-content">
+                        <h3>4. Get a Consultation</h3>
+                        <p>Follow-up with our partner consultants to further discuss your results. Alternatively, a printable summary is available to take to your own doctor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+    <div id="footer">
+        <div>
+            <p>
+                <span>2024 &copy; GeneVista Diagnostics.</span><a href="FAQ.html">FAQ</a> | <a href="privacy.html">Privacy Policy</a>
+            </p>
+            <ul>
+                <li id="facebook"><a href="http://freewebsitetemplates.com/go/facebook/">facebook</a></li>
+                <li id="twitter"><a href="http://freewebsitetemplates.com/go/twitter/">twitter</a></li>
+                <li id="googleplus"><a href="http://freewebsitetemplates.com/go/googleplus/">googleplus</a></li>
+                <li id="rss"><a href="#">rss</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
