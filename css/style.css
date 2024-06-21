@@ -77,9 +77,9 @@ body {
 }
 
 #section {
-    background: url(../images/bg.png) no-repeat left top; /* Position image to the left top */
+    background: url(../images/bg.gif) no-repeat center; /* Position image to the left top */
     background-size: auto 120%; /* Adjust the background size to fit height */
-    border-bottom: 1px solid #ffe600;
+    border-bottom: 2px solid #ffe600 ;
     height: 400px;
     margin: 2px;
     padding: 0;
@@ -88,27 +88,29 @@ body {
 
 #section div div {
 	background: url(../images/bg-heading.png) repeat;
-	height: 161px;
-	margin: 0 0 0 10px;
-	padding: 33px 22px 33px 18px;
+	height: 0px;
+	margin: 0px;
+	padding: 0px 0px 0px 18px;
 	width: 411px;
 }
 #section div div h1 {
-	color: #94acb3;
-	font-size: 30px;
-	font-weight: normal;
-	letter-spacing: 3px;
-	margin: 0;
-	padding: 0;
-	text-transform: uppercase;
+    color: #8ba7ae;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin: 5px;
+    padding-left: 35px; /* Increase the left padding */
+    padding-right: 30px; /* Keep some padding on the right */
+    text-transform: uppercase;
 }
 #section div div p {
-	color: #3f5055;
-	font-size: 16px;
-	line-height: 36px;
-	margin: 0;
-	padding: 0;
-	text-align: justify;
+    color: #ebf6f9;
+    font-size: 16px;
+    line-height: 36px;
+    margin: 5px;
+    padding-left: 50px; /* Increase the left padding */
+    padding-right: 20px; /* Keep some padding on the right */
+    text-align: justify;
 }
 #section div div p a {
 	color: #94acb3;
@@ -118,19 +120,22 @@ body {
 }
 #featured {
 	background: url(../images/bg-content.jpg) repeat;
-	margin: 0;
-	padding: 0;
+	margin: 10;
+	padding: 20px;
+	border-bottom: #ffe600 2px solid;
+
 }
 #featured > div {
 	margin: 0 auto;
 	overflow: hidden;
-	padding: 33px 0 27px;
+	padding: 3px 0 26px;
 	width: 960px;
+
 
 }
 .testimonial-container {
 	background-color: #f8f8f8;
-	padding: 5px;
+	padding: 12px;
 }
 body {
     font-family: Arial, sans-serif;
@@ -214,20 +219,6 @@ body {
     margin: 0;
     padding: 0;
 }
-.topic {
-	transition: transform 0.3s ease;
-}
-.topic:hover {
-	transform: scale(1.1);
-}
-#header ul li {
-			display: inline-block;
-			transition: transform 0.3s ease;
-		}
-#header ul li:hover {
-			transform: scale(1.1);
-		}
-
 
 body {
     font-family: Arial, sans-serif;
@@ -271,7 +262,19 @@ header h1 {
     margin-top: 20px;
     text-align: justify;
 }
-
+.topic {
+	transition: transform 0.3s ease;
+}
+.topic:hover {
+	transform: scale(1.1);
+}
+#header ul li {
+			display: inline-block;
+			transition: transform 0.3s ease;
+		}
+#header ul li:hover {
+			transform: scale(1.1);
+}
 
 
 #body {
