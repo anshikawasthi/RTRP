@@ -5,7 +5,8 @@
 	<title>Laboratory Website Template</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 		<body>
 			<div id="header">
@@ -28,19 +29,18 @@
 					</li>
 				</ul>
 			</div>
-	<div id="section">
-		<div>
-			<div>
-				<h1>accurate.reliable.fast</h1>
-				<p>
+            <div id="section" data-aos="fade-up" data-aos-duration="1000">
+                <div>
+                    <div>
+                        <h1 data-aos="fade-right">accurate.reliable.fast</h1>
+                        <p data-aos="fade-left">
 					Unlock the secrets of your DNA and take control of your health with GenePredictor. Our cutting-edge platform harnesses the power of machine learning to analyze your genetic information and provide personalized insights into your risk for various genetic diseases.
 				</p>
 			</div>
 		</div>
 	</div>
-	<div id="featured">
-		<div>
-			<h1 style="text-align: center; font-family: 'Copperplate Gothic'; color: #737b8a; text-transform: uppercase;">OUR CUSTOMERS SAY</h1>
+    <div id="featured" data-aos="fade-up" data-aos-duration="1200">
+        <h1 style="text-align: center; font-family: 'Copperplate Gothic'; color: #737b8a; text-transform: uppercase;">OUR CUSTOMERS SAY</h1>
 			<div class="testimonial-container" style="text-align: center; margin-left: 5%;">
 				<marquee direction="up" behavior="scroll" scrollamount="5" height="300" style="display: inline-block; text-align: center;">
 					<div class="testimonial" style="margin-bottom: 20px; border: 1px solid #ccc; padding: 20px; width: 50%; text-align: center; margin-left: 20%;">
@@ -99,7 +99,7 @@
 	</div>
 	
 	<h1 style="text-align: center; font-family: 'Copperplate Gothic'; color: #737b8a; text-transform: uppercase;">EDUCATIONAL RESOURCES</h1>
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
         <section class="topics">
             <div class="topic">
                 <img src="images/insomia.png" alt="Is Insomnia Genetic?">
@@ -143,7 +143,7 @@
 	<div id="footer">
 		<div>
 			<p>
-				<span>2024 &copy; Genevista Diagnostics.</span><a href="FAQ.html">FAQ</a> | <a href="privacy.html">Privacy Policy</a>
+				<span>2024 &copy; Genevista Diagnostics.</span><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a>
 			</p>
 			<ul>
 				<li id="facebook">
@@ -161,5 +161,10 @@
 			</ul>
 		</div>
 	</div>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
 </body>
 </html>
