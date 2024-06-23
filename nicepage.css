@@ -1,9 +1,69 @@
-/*begin-commonstyles library*//*!
- * froala_editor v4.0.6 (https://www.froala.com/wysiwyg-editor)
- * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2021 Froala Labs
- */
+ body {
+	background: url(../images/bg-body.jpg) repeat;
+	font-family: 'Conv_Ubuntu-Light';
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1;
+	margin: 0;
+	min-width: 960px;
+	padding: 0;
+}
+ #header {
+  background: url(../images/bg-header.jpg) repeat-x;
+  margin: 0;
+  padding: 18px 0 0;
+}
 
+#header a.logo {
+  display: block;
+  height: 120px; /* Adjusted height to fit the new logo */
+  margin: 0 auto 22px;
+  padding: 0;
+  width: 860px; /* Adjusted width to fit the new logo */
+}
+#header a.logo img {
+  border: 0;
+  display: block;
+  height: 80%; /* Ensures the image fits the parent dimensions */
+  width: 90%; /* Ensures the image fits the parent dimensions */
+}
+#header ul {
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 15px 0 22px;
+  text-align: center;
+  width: 960px;
+}
+#header ul li {
+  float: left;
+  list-style: none;
+  margin: 0 0 0 116px;
+  padding: 0;
+}
+#header ul li:first-child {
+  margin: 0 0 0 15px;
+}
+#header ul li a {
+  color: #588181;
+  display: block;
+  height: 37px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#header ul li a:hover {
+  color: #254c4c;
+}
+
+#header ul li.selected {
+background: url(../images/bg-menu.png) no-repeat top center;
+}
+#header ul li.selected a {
+background: 	url(../images/dots.png) repeat-x left bottom;
+}
 .fr-clearfix::after {
   clear: both;
   display: block;
@@ -95,7 +155,7 @@
     white-space: pre-wrap;
     word-wrap: break-word;
     overflow: visible; }
-/*  .fr-view[dir="rtl"] blockquote {
+ .fr-view[dir="rtl"] blockquote {
     border-left: none;
     border-right: solid 2px #5E35B1;
     margin-right: 0;
@@ -560,20 +620,7 @@ ul,
 ol {
   padding-left: 20px;
 }
-/* Fade effect */
-/* Over effect */
-/* Slide effect */
-/* Over and Slide effect */
-/* Flip Left effect */
-/* Flip Right effect */
-/* Flip Top effect */
-/* Flip Bottom effect */
-/* Wobble Left effect */
-/* Wobble Right effect */
-/* Wobble top effect */
-/* Wobble bottom effect */
-/* Zoom and Rotate Effects */
-/* Utility */
+
 .u-over-slide {
   position: absolute;
   left: 0;
@@ -1028,7 +1075,6 @@ ol {
 .u-btn {
   /*display: inline-block;*/
   display: table;
-  /*TODO maye need another solution for negative marin*/
   cursor: pointer;
   color: inherit;
   font-size: inherit;
@@ -21537,15 +21583,15 @@ a.pswp__share--download:hover {
   }
   to {
     transform-origin: center center;
-    transform: translate3d(-50% !important, -50% !important, 0);
-    opacity: 1;
+    transform: translate3d(-50% !important -50% !important, 0);
+    opacity:1;
   }
 }
 @keyframes customAnimationOut {
   from {
     transform-origin: center center;
     transform: translate3d(-50% !important, -50% !important, 0);
-    opacity: 1;
+    opacity :  1;
   }
   to {
     transform-origin: center center;
@@ -42555,10 +42601,7 @@ a.u-link.u-text-hover-grey-90:hover {
 
 
 /*end-variables sitestylecss*/
- .u-header {
-  background-image: none;
-}
-
+ 
 .u-header .u-sheet-1 {
   min-height: 80px;
 }
@@ -42592,46 +42635,80 @@ a.u-link.u-text-hover-grey-90:hover {
     width: auto;
   }
 }
-
-
-
- .u-footer {
-  background-image: none;
+#footer {
+	border-top: 2px solid #ffe600;
+	margin: 2px 0 0;
+	padding: 16px 0;
+}
+#footer div {
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+	width: 960px;
+}
+#footer div p {
+	color: #767676;
+	float: left;
+	font-size: 11px;
+	line-height: 27px;
+	margin: 0;
+	padding: 0 0 0 10px;
+}
+#footer div p span {
+	padding: 0 16px 0 0;
+}
+#footer div p a {
+	color: #767676;
+	text-decoration: none;
+}
+#footer div p a:hover {
+	color: #000;
+}
+#footer div ul {
+	float: right;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+#footer div ul li {
+	float: left;
+	list-style: none;
+	margin: 0 12px 0 0;
+	padding: 0;
+}
+#footer div ul li a {
+	background: url(../images/icons.png) no-repeat;
+	display: block;
+	height: 27px;
+	margin: 0;
+	padding: 0;
+	text-indent: -99999px;
+	width: 27px;
+}
+#footer div ul #facebook a {
+	background-position: 0 0;
+}
+#footer div ul #facebook a:hover {
+	background-position: -32px 0;
+}
+#footer div ul #twitter a {
+	background-position: 0 -37px;
+}
+#footer div ul #twitter a:hover {
+	background-position: -32px -37px;
+}
+#footer div ul #googleplus a {
+	background-position: 0 -74px;
+}
+#footer div ul #googleplus a:hover {
+	background-position: -32px -74px;
+}
+#footer div ul #rss a {
+	background-position: 0 -111px;
+}
+#footer div ul #rss a:hover {
+	background-position: -32px -111px;
 }
 
-.u-footer .u-sheet-1 {
-  min-height: 120px;
-}
-
-.u-footer .u-text-1 {
-  width: 417px;
-  margin: 49px auto;
-}
-@media (max-width: 1199px) {
-  .u-footer .u-sheet-1 {
-    min-height: 99px;
-  }
-}
-@media (max-width: 991px) {
-  .u-footer .u-sheet-1 {
-    min-height: 76px;
-  }
-}
-@media (max-width: 767px) {
-  .u-footer .u-sheet-1 {
-    min-height: 57px;
-  }
-}
-@media (max-width: 575px) {
-  .u-footer .u-sheet-1 {
-    min-height: 36px;
-  }
-
-  .u-footer .u-text-1 {
-    width: 340px;
-  }
-}
-
- /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
  /*end-variables base-font-size*/
