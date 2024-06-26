@@ -120,22 +120,48 @@ body {
 }
 #featured {
 	background: url(../images/bg-content.jpg) repeat;
-	margin: 10;
 	padding: 20px;
-	border-bottom: #ffe600 1px solid;
-
+	border-bottom: #ffe600 2px solid;
+	width: 100%;
+	max-width: 100%; /* Ensure it doesn't exceed the parent width */
+	margin: 0 auto;
 }
 #featured > div {
 	margin: 0 auto;
-	overflow: hidden;
-	padding: 3px 0 26px;
-	width: 960px;
+	width: 100%;
 
 
 }
+
 .testimonial-container {
 	background-color: #f8f8f8;
 	padding: 12px;
+	width: 100%;
+	max-width: 960px; /* Adjust the width as needed */
+	margin: 0 auto;
+	text-align: center;
+}
+
+.testimonial {
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	padding: 20px;
+	width: 80%; /* Adjust the width to ensure it's responsive */
+	max-width: 480px; /* Ensure it doesn't exceed the parent width */
+	text-align: center;
+	margin: 20px auto; /* Center it horizontally */
+}
+
+.testimonial img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+
+.text-warning {
+	color: #ffc107;
 }
 body {
     font-family: Arial, sans-serif;
