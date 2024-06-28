@@ -5,82 +5,28 @@
 	<meta charset="UTF-8">
 	<title>About - Laboratory Website Template</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<style>
-		.feedback-container {
-			margin-top: 30px;
-			padding: 10px;
-			border: 1px solid #ccc;
-			background-color: #f9f9f9;
-			border-radius: 5px;
-		}
-		.feedback-container h3 {
-			margin-top: 0;
-		}
-		.feedback-container label {
-			display: block;
-			margin-bottom: 10px;
-			color: #333;
-		}
-		.feedback-container input[type="text"],
-		.feedback-container textarea {
-			width: 100%;
-			padding: 8px;
-			box-sizing: border-box;
-			margin-bottom: 10px;
-			border: 1px solid #ccc;
-			border-radius: 3px;
-		}
-		.feedback-container input[type="submit"] {
-			background-color: #4CAF50;
-			color: white;
-			padding: 10px 20px;
-			border: none;
-			cursor: pointer;
-			border-radius: 5px;
-		}
-		.feedback-container input[type="submit"]:hover {
-			background-color: #45a049;
-		}
-		.feedback-container .thank-you-message {
-			display: none;
-			margin-top: 10px;
-			color: green;
-			padding: 10px;
-			background-color: #d4edda;
-			border: 1px solid #c3e6cb;
-			border-radius: 5px;
-			position: relative;
-		}
-		.feedback-container .thank-you-message .close-btn {
-			position: absolute;
-			top: 5px;
-			right: 5px;
-			cursor: pointer;
-			color: #155724;
-		}
-	</style>
 </head>
 <body>
 	<div id="header">
-				<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
-				<ul>
-					<li >
-						<a href="index.html"></a>
-					</li>
-					<li>
-						<a href="index.html">home</a>
-					</li>
-					<li>
-						<a href="about.html">about us</a>
-					</li>
-					<li>
-						<a href="services.html">services</a>
-					</li>
-					<li>
-						<a href="contact.html">test results</a>
-					</li>
-				</ul>
-			</div>
+		<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+		<ul>
+			<li>
+				<a href="index.html">home</a>
+			</li>
+			<li class="selected">
+				<a href="about.html">about</a>
+			</li>
+			<li>
+				<a href="services.html">services</a>
+			</li>
+			<li>
+				<a href="location.html">our locations</a>
+			</li>
+			<li>
+				<a href="contact.html">contact</a>
+			</li>
+		</ul>
+	</div>
 	<div id="body">
 		<div class="sidebar">
 			<h3>contact</h3>
@@ -88,114 +34,61 @@
 				<li>
 					<span class="address">address</span>
 					<ul>
-						<li>
-							Genevista labs
-						</li>
-						<li>
-							Diagnostic Center
-						</li>
-						<li>
-						    Hitech city
-						</li>
-						<li>
-							Hyderabad
-						</li>
+						<li>Genevista labs</li>
+						<li>Diagnostic Center</li>
+						<li>Hitech city</li>
+						<li>Hyderabad</li>
 					</ul>
 				</li>
 				<li>
 					<span class="phone">telephone</span>
 					<ul>
-						<li>
-							+919030892343
-						</li>
+						<li>+919030892343</li>
 					</ul>
 				</li>
 				<li>
 					<span class="email">email</span>
 					<ul>
-						<li>
-							<a href="http://www.freewebsitetemplates.com/misc/contact">genevista.com</a>
-						</li>
+						<li><a href="http://www.freewebsitetemplates.com/misc/contact">genevista.com</a></li>
 					</ul>
 				</li>
 				<li>
 					<span class="twitter">twitter</span>
 					<ul>
-						<li>
-							<a href="http://freewebsitetemplates.com/go/twitter/">@genevista</a>
-						</li>
+						<li><a href="http://freewebsitetemplates.com/go/twitter/">@genevista</a></li>
 					</ul>
 				</li>
 				<li>
 					<span class="facebook">facebook</span>
 					<ul>
-						<li>
-							<a href="http://freewebsitetemplates.com/go/facebook/">www.facebook/genevista</a>
-						</li>
+						<li><a href="http://freewebsitetemplates.com/go/facebook/">www.facebook/genevista</a></li>
 					</ul>
 				</li>
 			</ul>
-			<div class="feedback-container">
-				<h3>Feedback</h3>
-				<form id="feedback-form">
-					<label for="feedbackName">Name</label>
-					<input type="text" id="feedbackName" name="feedbackName" required>
-
-					<label for="feedbackEmail">Email</label>
-					<input type="email" id="feedbackEmail" name="feedbackEmail" required>
-
-					<label for="feedbackPhone">Phone Number</label>
-					<input type="text" id="feedbackPhone" name="feedbackPhone">
-
-					<label for="feedback">Your feedback</label>
-					<textarea id="feedback" name="feedback" rows="4" required></textarea>
-
-					<input type="submit" value="Submit">
-					<div class="thank-you-message" id="thank-you-message">
-						Thank you for your valuable feedback!
-						<span class="close-btn" onclick="document.getElementById('thank-you-message').style.display = 'none';">×</span>
-					</div>
-				</form>
-			</div>
 		</div>
 		<div class="content">
 			<img src="faqs.jpg" alt="FAQ" width="600" height="200">
-
-
 			<h2>FREQUENTLY ASKED QUESTIONS</h2>
 			<h3>WHAT IS DNA TESTING? </h3>
-			<p>
-				DNA testing is a scientific method used to analyze an individual's genetic makeup. It involves collecting a sample (usually saliva or cheek swab) to extract DNA, which contains unique genetic information.
-			</p>
+			<p>DNA testing is a scientific method used to analyze an individual's genetic makeup. It involves collecting a sample (usually saliva or cheek swab) to extract DNA, which contains unique genetic information.</p>
 			<h3>HOW DOES DNA TESTING WORK?</h3>
-			<p>
-				DNA testing starts with collecting a sample from you (saliva or cheek swab). The sample is then processed in a laboratory to extract DNA. Advanced technologies analyze specific genetic markers to provide insights into ancestry, health predispositions, and more.
-			</p>
-			
-            <h3>WHAT CAN I LEARN FROM DNA TESTING?</h3>
-			<p>
-				DNA testing can reveal information about your ancestry, ethnic origins, genetic traits (such as eye color), health conditions you may be predisposed to, and potential responses to medications.
-			</p>
-            <h3>IS DNA TESTING ACCURATE?</h3>
-			<p>
-				Our DNA testing procedures follow rigorous scientific standards. While accuracy levels are high, it's important to note that results may vary based on the type of test and genetic variations. We provide detailed reports with clear explanations of results.
-            <h3>HOW IS MY PRIVACY PROTECTED?</h3>
-			<p>
-				Protecting your privacy is our top priority. We adhere to strict data security measures, including encryption, secure servers, and limited access to your information. We do not sell your data to third parties without your consent.
-			</p>
-            <h3>HOW LONG DOES IT TAKE TO GET RESULTS?</h3>
-			<p>
-				Results typically take several weeks, depending on the type of test and laboratory processing times. You'll receive notifications once your results are ready, and you can access them securely through our website.
-            <h3>HOW CAN I ORDER A DNA TEST?</h3>
-            <p>
-                Ordering a DNA test is easy! Visit our website, select the type of test you're interested in, complete the order process, and follow the instructions to collect and submit your sample.
-			</p>
+			<p>DNA testing starts with collecting a sample from you (saliva or cheek swab). The sample is then processed in a laboratory to extract DNA. Advanced technologies analyze specific genetic markers to provide insights into ancestry, health predispositions, and more.</p>
+			<h3>WHAT CAN I LEARN FROM DNA TESTING?</h3>
+			<p>DNA testing can reveal information about your ancestry, ethnic origins, genetic traits (such as eye color), health conditions you may be predisposed to, and potential responses to medications.</p>
+			<h3>IS DNA TESTING ACCURATE?</h3>
+			<p>Our DNA testing procedures follow rigorous scientific standards. While accuracy levels are high, it's important to note that results may vary based on the type of test and genetic variations. We provide detailed reports with clear explanations of results.</p>
+			<h3>HOW IS MY PRIVACY PROTECTED?</h3>
+			<p>Protecting your privacy is our top priority. We adhere to strict data security measures, including encryption, secure servers, and limited access to your information. We do not sell your data to third parties without your consent.</p>
+			<h3>HOW LONG DOES IT TAKE TO GET RESULTS?</h3>
+			<p>Results typically take several weeks, depending on the type of test and laboratory processing times. You'll receive notifications once your results are ready, and you can access them securely through our website.</p>
+			<h3>HOW CAN I ORDER A DNA TEST?</h3>
+			<p>Ordering a DNA test is easy! Visit our website, select the type of test you're interested in, complete the order process, and follow the instructions to collect and submit your sample.</p>
 		</div>
 	</div>
 	<div id="footer">
 		<div>
 			<p>
-				<span>2024 &copy; Genevista Diagnostics .</span><a href="FAQ.html" >FAQ</a> | <a href="privacy.html" >Privacy Policy</a>
+				<span>2024 &copy; Genevista Diagnostics .</span><a href="FAQ.html">FAQ</a> | <a href="privacy.html">Privacy Policy</a>
 			</p>
 			<ul>
 				<li id="facebook">
@@ -208,26 +101,10 @@
 					<a href="http://freewebsitetemplates.com/go/googleplus/">googleplus</a>
 				</li>
 				<li id="rss">
-					<a href="#" >rss</a>
+					<a href="#">rss</a>
 				</li>
 			</ul>
 		</div>
 	</div>
-	<script>
-		document.getElementById('feedback-form').addEventListener('submit', function(event) {
-			var name = document.getElementById('feedbackName').value.trim();
-			var email = document.getElementById('feedbackEmail').value.trim();
-			var feedback = document.getElementById('feedback').value.trim();
-
-			if (name === '' || email === '' || feedback === '') {
-				alert('Please fill out all required fields.');
-				event.preventDefault();
-			} else {
-				document.querySelector('.thank-you-message').style.display = 'block';
-				event.preventDefault(); // Remove this line to submit the form normally after showing the thank you message
-			}
-		});
-	</script>
-	
 </body>
 </html>
