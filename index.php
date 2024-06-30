@@ -48,7 +48,6 @@ input{
 .input-group{
     padding:1% 0;
     position:relative;
-
 }
 .input-group i{
     position:absolute;
@@ -79,7 +78,6 @@ input:focus~label,input:not(:placeholder-shown)~label{
     text-align:right;
     font-size:1rem;
     margin-bottom:1rem;
-
 }
 .recover a{
     text-decoration:none;
@@ -104,8 +102,6 @@ input:focus~label,input:not(:placeholder-shown)~label{
 .btn:hover{
     background:#07001f;
 }
-
-
 .links{
     display:flex;
     justify-content:space-around;
@@ -127,63 +123,73 @@ button:hover{
 </style>
 </head>
 <body>
-    <div class="container" id="signup" style="display:none;">
-      <h1 class="form-title">REGISTER</h1>
-      <form method="post" action="register.php">
-        <div class="input-group">
-           <i class="fas fa-user"></i>
-           <input type="text" name="fName" id="fName" placeholder="First Name" required>
-           <label for="fname">First Name</label>
-        </div>
-        <div class="input-group">
-            <i class="fas fa-user"></i>
-            <input type="text" name="lName" id="lName" placeholder="Last Name" required>
-            <label for="lName">Last Name</label>
-        </div>
-        <div class="input-group">
-            <i class="fas fa-envelope"></i>
-            <input type="email" name="email" id="email" placeholder="Email" required>
-            <label for="email">Email</label>
-        </div>
-        <div class="input-group">
-            <i class="fas fa-lock"></i>
-            <input type="password" name="password" id="password" placeholder="Password" required>
-            <label for="password">Password</label>
-        </div>
-       <input type="submit" class="btn" value="Sign Up" name="signUp">
-      </form>
-     
-      <div class="links">
-        <p>Already Have Account ?</p>
-        <button id="signInButton">  Sign In</button>
-      </div>
+
+<div class="container" id="signup" style="display:none;">
+        <h1 class="form-title">REGISTER to take a test</h1>
+        <form method="post" action="register.php">
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" name="fName" id="fName" placeholder="First Name" required>
+                <label for="fName">First Name</label>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" name="lName" id="lName" placeholder="Last Name" required>
+                <label for="lName">Last Name</label>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <label for="password">Password</label>
+            </div>
+            <input type="submit" class="btn" value="Sign Up" name="signUp">
+        </form>
+
     </div>
 
     <div class="container" id="signIn">
         <h1 class="form-title">WELCOME BACK ! <br> Sign In</h1>
         <form method="post" action="register.php">
-          <div class="input-group">
-              <i class="fas fa-envelope"></i>
-              <input type="email" name="email" id="email" placeholder="Email" required>
-              <label for="email">Email</label>
-          </div>
-          <div class="input-group">
-              <i class="fas fa-lock"></i>
-              <input type="password" name="password" id="password" placeholder="Password" required>
-              <label for="password">Password</label>
-          </div>
-          <p class="recover">
-            <a href="#">Recover Password</a>
-          </p>
-         <input type="submit" class="btn" value="Sign In" name="signIn">
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <label for="password">Password</label>
+            </div>
+          
+            <input type="submit" class="btn" value="Sign In" name="signIn">
         </form>
-        
 
-        <div class="links">
-          <p>Don't have account yet?</p>
-          <button id="signUpButton">Sign Up</button>
-        </div>
-      </div>
-      <script src="script.js"></script>
+       
+    </div>
+
+    <script>
+        function showSignUpForm() {
+            document.getElementById('signup').style.display = 'block';
+            document.getElementById('signIn').style.display = 'none';
+        }
+
+        function showSignInForm() {
+            document.getElementById('signup').style.display = 'none';
+            document.getElementById('signIn').style.display = 'block';
+        }
+
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const formType = urlParams.get('form');
+            if (formType === 'signup') {
+                showSignUpForm();
+            }
+        };
+    </script>
 </body>
 </html>
