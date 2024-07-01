@@ -1,237 +1,135 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Laboratory Website Template</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Laboratory Website Template</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-	<meta charset="UTF-8">
-	<title>About - Laboratory Website Template</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<style>
-		.feedback-container {
-			margin-top: 30px;
-			padding: 10px;
-			border: 1px solid #ccc;
-			background-color: #f9f9f9;
-			border-radius: 5px;
-		}
-		.feedback-container h3 {
-			margin-top: 0;
-		}
-		.feedback-container label {
-			display: block;
-			margin-bottom: 10px;
-			color: #333;
-		}
-		.feedback-container input[type="text"],
-		.feedback-container textarea {
-			width: 100%;
-			padding: 8px;
-			box-sizing: border-box;
-			margin-bottom: 10px;
-			border: 1px solid #ccc;
-			border-radius: 3px;
-		}
-		.feedback-container input[type="submit"] {
-			background-color: #4CAF50;
-			color: white;
-			padding: 10px 20px;
-			border: none;
-			cursor: pointer;
-			border-radius: 5px;
-		}
-		.feedback-container input[type="submit"]:hover {
-			background-color: #45a049;
-		}
-		.feedback-container .thank-you-message {
-			display: none;
-			margin-top: 10px;
-			color: green;
-			padding: 10px;
-			background-color: #d4edda;
-			border: 1px solid #c3e6cb;
-			border-radius: 5px;
-			position: relative;
-		}
-		.feedback-container .thank-you-message .close-btn {
-			position: absolute;
-			top: 5px;
-			right: 5px;
-			cursor: pointer;
-			color: #155724;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <title>About - Laboratory Website Template</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-	<div id="header">
-		<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
-		<ul>
-			<li >
-				<a href="index.html"></a>
-			</li>
-			<li>
-				<a href="index.html">home</a>
-			</li>
-			<li  class="selected">
-				<a href="about.html">about us</a>
-			</li>
-			<li>
-				<a href="services.html">services</a>
-			</li>
-			<li>
-				<a href="testresult.html">test results</a>
-			</li>
-		</ul>
-	</div>
-	<div id="body">
-		<div class="sidebar">
-			<h3>contact</h3>
-			<ul>
-				<li>
-					<span class="address">address</span>
-					<ul>
-						<li>
-							Genevista labs
-						</li>
-						<li>
-							Diagnostic Center
-						</li>
-						<li>
-						    Hitech city
-						</li>
-						<li>
-							Hyderabad
-						</li>
-					</ul>
-				</li>
-				<li>
-					<span class="phone">telephone</span>
-					<ul>
-						<li>
-							+919030892343
-						</li>
-					</ul>
-				</li>
-				<li>
-					<span class="email">email</span>
-					<ul>
-						<li>
-							<a href="http://www.freewebsitetemplates.com/misc/contact">genevista.com</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<span class="twitter">twitter</span>
-					<ul>
-						<li>
-							<a href="http://freewebsitetemplates.com/go/twitter/">@genevista</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<span class="facebook">facebook</span>
-					<ul>
-						<li>
-							<a href="http://freewebsitetemplates.com/go/facebook/">www.facebook/genevista</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
-			<div class="feedback-container">
-				<h3>Feedback</h3>
-				<form id="feedback-form">
-					<label for="feedbackName">Name</label>
-					<input type="text" id="feedbackName" name="feedbackName" required>
-
-					<label for="feedbackEmail">Email</label>
-					<input type="email" id="feedbackEmail" name="feedbackEmail" required>
-
-					<label for="feedbackPhone">Phone Number</label>
-					<input type="text" id="feedbackPhone" name="feedbackPhone">
-
-					<label for="feedback">Your feedback</label>
-					<textarea id="feedback" name="feedback" rows="4" required></textarea>
-
-					<input type="submit" value="Submit">
-					<div class="thank-you-message" id="thank-you-message">
-						Thank you for your valuable feedback!
-						<span class="close-btn" onclick="document.getElementById('thank-you-message').style.display = 'none';">×</span>
-					</div>
-				</form>
-			</div>
-		</div>
-		<div class="content">
-			<img src="images/laboratory.jpg" alt="">
-			<h2>about</h2>
-			<p>Welcome to GENEVISTA , where we empower you with insights into your genetic makeup. At GENEVISTA , we believe that understanding your DNA can unlock a wealth of information about your health, ancestry, and personal traits. Our mission is to make genetic testing accessible, informative, and actionable for everyone.
-
-			</p>
-			<h3>OUR COMMITMENT</h3>
-			<p>
-				ACCURACY: We utilize state-of-the-art technology and partner with accredited laboratories to ensure the highest standards of accuracy and reliability in our DNA tests.<br>
-PRIVACY: Your privacy and security are our top priorities. We adhere to strict protocols and comply with all relevant data protection regulations to safeguard your genetic information.<br>
-EDUCATION: We strive to make genetic science understandable and applicable to everyday life. Our reports are designed to provide clear insights and actionable recommendations based on your genetic profile.<br>
-SUPPORT: Our team of genetic counselors and customer support specialists are here to guide you through every step of your DNA testing journey. We're committed to ensuring that you have the support you need, from test selection to understanding your results.
-
-
-			</p>
-			<h3>WHY CHOOSE US?</h3>
-			<p>
-				COMPREHENSIVE TESTS: We offer a range of DNA tests tailored to meet your specific needs, whether you're curious about your ancestry, interested in personalized health insights, or seeking to understand inherited traits.
-<br>
-EASY PROCESS: Getting started is simple. Order your test kit online, collect your sample from the comfort of your home, and send it back to us for analysis. Receive your detailed report securely online.
-<br>
-SCIENTIFIC EXCELLENCE: Our tests are developed in collaboration with leading geneticists and scientists. We're dedicated to advancing genetic research and translating scientific discoveries into practical applications for our customers.
-
-
-			</p>
-			<h3>REPORT PROCESS</h3>
-			<p>
-				As part of our methodology, our CLIA-certified lab extracts DNA from cells in your saliva sample. Then the lab processes the DNA on a genotyping chip that reads hundreds of thousands of variants in your genome.
-
-Your genetic data is analyzed, and we generate your personalized reports based on well-established scientific and medical research.
-			</p>
-		</div>
-	</div>
-	<div id="footer">
-		<div>
-			<p>
-				<span>2024 &copy; Genevista Diagnostics .</span><a href="FAQ.html" >FAQ</a> | <a href="privacy.html" >Privacy Policy</a>
-			</p>
-			<ul>
-				<li id="facebook">
-					<a href="http://freewebsitetemplates.com/go/facebook/">facebook</a>
-				</li>
-				<li id="twitter">
-					<a href="http://freewebsitetemplates.com/go/twitter/">twitter</a>
-				</li>
-				<li id="googleplus">
-					<a href="http://freewebsitetemplates.com/go/googleplus/">googleplus</a>
-				</li>
-				<li id="rss">
-					<a href="#" >rss</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<script>
-		document.getElementById('feedback-form').addEventListener('submit', function(event) {
-			var name = document.getElementById('feedbackName').value.trim();
-			var email = document.getElementById('feedbackEmail').value.trim();
-			var feedback = document.getElementById('feedback').value.trim();
-
-			if (name === '' || email === '' || feedback === '') {
-				alert('Please fill out all required fields.');
-				event.preventDefault();
-			} else {
-				document.querySelector('.thank-you-message').style.display = 'block';
-				event.preventDefault(); // Remove this line to submit the form normally after showing the thank you message
-			}
-		});
-	</script>
-	
+    <div id="header">
+        <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+        <ul>
+            <li>
+                <a href="index.html">home</a>
+            </li>
+            <li class="selected">
+                <a href="about.html">about us</a>
+            </li>
+            <li>
+                <a href="services.html">services</a>
+            </li>
+            <li>
+                <a href="testresult.html">test results</a>
+            </li>
+        </ul>
+    </div>
+    <div id="body">
+        <div class="sidebar">
+            <h3>contact</h3>
+            <ul>
+                <li>
+                    <span class="address">address</span>
+                    <ul>
+                        <li>
+                            Genevista labs
+                        </li>
+                        <li>
+                            Diagnostic Center
+                        </li>
+                        <li>
+                            Hitech city
+                        </li>
+                        <li>
+                            Hyderabad
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="phone">telephone</span>
+                    <ul>
+                        <li>
+                            +919030892343
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="email">email</span>
+                    <ul>
+                        <li>
+                            <a href="http://www.freewebsitetemplates.com/misc/contact">genevista.com</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="twitter">twitter</span>
+                    <ul>
+                        <li>
+                            <a href="http://freewebsitetemplates.com/go/twitter/">@genevista</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="facebook">facebook</span>
+                    <ul>
+                        <li>
+                            <a href="http://freewebsitetemplates.com/go/facebook/">www.facebook/genevista</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <img src="images/laboratory.jpg" alt="">
+            <h2>about</h2>
+            <p>Welcome to GENEVISTA , where we empower you with insights into your genetic makeup. At GENEVISTA , we believe that understanding your DNA can unlock a wealth of information about your health, ancestry, and personal traits. Our mission is to make genetic testing accessible, informative, and actionable for everyone.</p>
+            <h3>OUR COMMITMENT</h3>
+            <p>
+                ACCURACY: We utilize state-of-the-art technology and partner with accredited laboratories to ensure the highest standards of accuracy and reliability in our DNA tests.<br>
+                PRIVACY: Your privacy and security are our top priorities. We adhere to strict protocols and comply with all relevant data protection regulations to safeguard your genetic information.<br>
+                EDUCATION: We strive to make genetic science understandable and applicable to everyday life. Our reports are designed to provide clear insights and actionable recommendations based on your genetic profile.<br>
+                SUPPORT: Our team of genetic counselors and customer support specialists are here to guide you through every step of your DNA testing journey. We're committed to ensuring that you have the support you need, from test selection to understanding your results.
+            </p>
+            <h3>WHY CHOOSE US?</h3>
+            <p>
+                COMPREHENSIVE TESTS: We offer a range of DNA tests tailored to meet your specific needs, whether you're curious about your ancestry, interested in personalized health insights, or seeking to understand inherited traits.
+                <br>
+                EASY PROCESS: Getting started is simple. Order your test kit online, collect your sample from the comfort of your home, and send it back to us for analysis. Receive your detailed report securely online.
+                <br>
+                SCIENTIFIC EXCELLENCE: Our tests are developed in collaboration with leading geneticists and scientists. We're dedicated to advancing genetic research and translating scientific discoveries into practical applications for our customers.
+            </p>
+            <h3>REPORT PROCESS</h3>
+            <p>
+                As part of our methodology, our CLIA-certified lab extracts DNA from cells in your saliva sample. Then the lab processes the DNA on a genotyping chip that reads hundreds of thousands of variants in your genome.
+                <br>
+                Your genetic data is analyzed, and we generate your personalized reports based on well-established scientific and medical research.
+            </p>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <p>
+                <span>2024 &copy; Genevista Diagnostics .</span><a href="FAQ.html" >FAQ</a> | <a href="privacy.html" >Privacy Policy</a>
+            </p>
+            <ul>
+                <li id="facebook">
+                    <a href="http://freewebsitetemplates.com/go/facebook/">facebook</a>
+                </li>
+                <li id="twitter">
+                    <a href="http://freewebsitetemplates.com/go/twitter/">twitter</a>
+                </li>
+                <li id="googleplus">
+                    <a href="http://freewebsitetemplates.com/go/googleplus/">googleplus</a>
+                </li>
+                <li id="rss">
+                    <a href="#" >rss</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
