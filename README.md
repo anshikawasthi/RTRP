@@ -2,6 +2,7 @@ Overview
 This project is a comprehensive hereditary disease analysis website designed to provide users with personalized health recommendations based on their genetic data. The platform integrates an AI-powered healthcare chatbox for genetic counseling, aiming to empower individuals to make informed health decisions and proactively manage their genetic risks.
 
 Features
+
 User Registration & Login: Secure user registration and login functionality.
 Genetic Test Request: Users can request genetic tests for hereditary diseases and health conditions.
 Sample Collection: Provides instructions and materials for DNA sample collection.
