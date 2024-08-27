@@ -4,7 +4,8 @@ This project is a comprehensive hereditary disease analysis website designed to 
 Features
 
 User Registration & Login: Secure user registration and login functionality.
-Genetic Test Request: Users can request genetic tests for hereditary diseases and health conditions.
+
+Genetic Test Request: Users can request genetic tests for hereditary diseases and health conditions
 Sample Collection: Provides instructions and materials for DNA sample collection.
 Results Interpretation: Detailed and understandable reports of genetic test results using data visualization tools.
 Genetic Counseling Services: Access to an AI healthcare chatbox for interpreting results and providing guidance.
